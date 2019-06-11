@@ -32,6 +32,8 @@ List<Login> list=query.list();
 if(!list.isEmpty()){
 	System.out.println("login success");
 
+	System.out.println("Login sucess go to the profile page");
+
 	System.out.println("goto profile page");
 
 	System.out.println("hello java");
