@@ -17,7 +17,8 @@ public class Register extends HttpServlet{
 	static Session s=null;
 	static{
 		Configuration con = new Configuration().configure("hibernate.cfg.xml");
-		SessionFactory sf = con.buildSessionFactory();
+		SessionFactory sf 
+		= con.buildSessionFactory();
 		 s = sf.openSession();
 		 }
 @Override
@@ -30,10 +31,10 @@ query.setParameter("hello", password);
 List<Login> list=query.list();
 if(!list.isEmpty()){
 	System.out.println("login success");
-	System.out.println("hello java");
+	System.out.println("login succeed");
 }else{
 	System.out.println("login fail");
-	System.out.println("spring");
+	System.out.println("login failed");
 	
 }
 
