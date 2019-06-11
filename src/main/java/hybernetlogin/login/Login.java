@@ -18,6 +18,29 @@ private	String mobile;
 private	String password;
 	@Column(name="city")
 private	String city;
+public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getUserPojo() {
+		return userPojo;
+	}
+	public void setUserPojo(String userPojo) {
+		this.userPojo = userPojo;
+	}
+	public String getUserLocation() {
+		return userLocation;
+	}
+	public void setUserLocation(String userLocation) {
+		this.userLocation = userLocation;
+	}
+private String userName;
+private String userPojo;
+private String userLocation;
+
+
 
 	public String getEmail() {
 		return email;
