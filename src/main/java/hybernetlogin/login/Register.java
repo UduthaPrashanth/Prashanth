@@ -30,6 +30,7 @@ query.setParameter("hello", password);
 List<Login> list=query.list();
 if(!list.isEmpty()){
 	System.out.println("login success");
+	System.out.println("Login sucess go to the profile page");
 }else{
 	System.out.println("login fail");
 	
