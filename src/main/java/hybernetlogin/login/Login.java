@@ -18,7 +18,13 @@ private	String mobile;
 private	String password;
 	@Column(name="city")
 private	String city;
-
+private String Nothing;
+	public String getNothing() {
+	return Nothing;
+}
+public void setNothing(String nothing) {
+	Nothing = nothing;
+}
 	public String getEmail() {
 		return email;
 	}
