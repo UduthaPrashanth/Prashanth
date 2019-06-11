@@ -11,19 +11,35 @@ public class Login {
 	@Id
 	@Column(name="email")
 private	String email;
+	
 	@Column(name="mobile")
 private	String mobile;
-
+	
 	@Column(name="password")
 private	String password;
+	
 	@Column(name="city")
 private	String city;
+	
+	private String location;
+
+
+
+		public String getLocation() {
+		return location;
+	}
 private String Nothing;
 	public String getNothing() {
 	return Nothing;
 }
 public void setNothing(String nothing) {
 	Nothing = nothing;
+}
+	
+	 
+public void setLocation(String location) {
+	this.location = location;
+
 }
 	public String getEmail() {
 		return email;
