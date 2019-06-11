@@ -19,6 +19,7 @@ public class Register extends HttpServlet{
 		Configuration con = new Configuration().configure("hibernate.cfg.xml");
 		SessionFactory sf = con.buildSessionFactory();
 		 s = sf.openSession();
+		 
 		 }
 @Override
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
