@@ -30,8 +30,10 @@ query.setParameter("hello", password);
 List<Login> list=query.list();
 if(!list.isEmpty()){
 	System.out.println("login success");
+	System.out.println("hello java");
 }else{
 	System.out.println("login fail");
+	System.out.println("spring");
 	
 }
 
