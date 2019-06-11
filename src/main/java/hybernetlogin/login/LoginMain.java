@@ -39,7 +39,7 @@ public class LoginMain extends HttpServlet {
 		l.setMobile(mobile);
 		l.setPassword(Pwd);
 		l.setCity(city);
-System.out.println(l.getEmail());
+
 		/*
 		 * org.hibernate.Query Q=
 		 * s.createQuery("insert into modifier values(?,?,?,?)");
