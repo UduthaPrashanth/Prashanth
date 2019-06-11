@@ -18,29 +18,61 @@ private	String mobile;
 private	String password;
 	@Column(name="city")
 private	String city;
+
+public String getUserName1() {
+		return userName1;
+	}
+	public void setUserName1(String userName) {
+		this.userName1 = userName;
+	}
+	public String getUserPojo1() {
+		return userPojo1;
+	}
+	public void setUserPojo1(String userPojo) {
+		this.userPojo1 = userPojo;
+	}
+	public String getUserLocation1() {
+		return userLocation1;
+	}
+	public void setUserLocation1(String userLocation) {
+		this.userLocation1 = userLocation;
+	}
+private String userName1;
+private String userPojo1;
+private String userLocation1;
+
+
+	
+	
+	 
+	 @Column(name="location")
+private String location;
+	 
+	 
+	 private String userName;
+	 private String userPojo;
+	 private String userLocation;
+
+
+
 public String getUserName() {
-		return userName;
+		return userName1;
 	}
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.userName1 = userName;
 	}
 	public String getUserPojo() {
-		return userPojo;
+		return userPojo1;
 	}
 	public void setUserPojo(String userPojo) {
-		this.userPojo = userPojo;
+		this.userPojo1 = userPojo;
 	}
 	public String getUserLocation() {
-		return userLocation;
+		return userLocation1;
 	}
 	public void setUserLocation(String userLocation) {
-		this.userLocation = userLocation;
+		this.userLocation1 = userLocation;
 	}
-private String userName;
-private String userPojo;
-private String userLocation;
-
-
 
 	public String getEmail() {
 		return email;
