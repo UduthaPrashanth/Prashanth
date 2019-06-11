@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>text</servlet-name>
+		<servlet-class>hybernetlogin.login.LoginMain</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>text</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>hi</servlet-name>
+		<servlet-class>hybernetlogin.login.Register</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>hi</servlet-name>
+		<url-pattern>/guest</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
