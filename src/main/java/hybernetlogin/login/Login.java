@@ -11,13 +11,16 @@ public class Login {
 	@Id
 	@Column(name="email")
 private	String email;
+	
 	@Column(name="mobile")
 private	String mobile;
-
+	
 	@Column(name="password")
 private	String password;
+	
 	@Column(name="city")
 private	String city;
+
 
 public String getUserName1() {
 		return userName1;
@@ -40,20 +43,22 @@ public String getUserName1() {
 private String userName1;
 private String userPojo1;
 private String userLocation1;
+private String userName;
+private String userPojo;
+private String userLocation;
+
+
+
 
 
 	
 	
 	 
 	 @Column(name="location")
-private String location;
+private String location1;
 	 
 	 
-	 private String userName;
-	 private String userPojo;
-	 private String userLocation;
-
-
+	 
 
 public String getUserName() {
 		return userName1;
@@ -73,7 +78,28 @@ public String getUserName() {
 	public void setUserLocation(String userLocation) {
 		this.userLocation1 = userLocation;
 	}
+	
+	private String location;
 
+
+
+
+		public String getLocation() {
+		return location1;
+	}
+private String Nothing;
+	public String getNothing() {
+	return Nothing;
+}
+public void setNothing(String nothing) {
+	Nothing = nothing;
+}
+	
+	 
+public void setLocation(String location) {
+	this.location1 = location;
+
+}
 	public String getEmail() {
 		return email;
 	}
