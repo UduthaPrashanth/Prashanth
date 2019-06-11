@@ -19,6 +19,7 @@ public class Register extends HttpServlet{
 		Configuration con = new Configuration().configure("hibernate.cfg.xml");
 		SessionFactory sf = con.buildSessionFactory();
 		 s = sf.openSession();
+		 
 		 }
 @Override
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -30,9 +31,20 @@ query.setParameter("hello", password);
 List<Login> list=query.list();
 if(!list.isEmpty()){
 	System.out.println("login success");
+
 	System.out.println("Login sucess go to the profile page");
+
+	System.out.println("goto profile page");
+
+	System.out.println("hello java");
+
 }else{
 	System.out.println("login fail");
+
+	System.out.println("goto login page and give correct credentials");
+
+	System.out.println("spring");
+
 	
 }
 
